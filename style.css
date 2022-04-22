@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+}
+
+.clock--container {
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 35rem;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+}
+
+.clock {
+    border: 1px solid purple;
+    width: 30rem;
+    height: 30rem;
+    background-image: url('emptyAlarmClock3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clock--hour, .clock--minute, .clock--second {
+    /* border: 0.1rem solid black; */
+    width: 18rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 19.21rem;
+    left: 8.45rem;
+    /* transform: rotate(270deg); */
+    background: linear-gradient(90deg, rgba(255,255,255,0) 45%, rgba(0,0,0,1) 45%);
+}
+
+.clock--hour {
+    transform: rotate(0deg);
+    width: 12.25rem;
+    height: 0.2rem;
+    left: 11.31rem;
+}
+
+.clock--second {
+    width: 17rem;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 45%, rgba(255,0,0,1) 45%);
+    height: 0.1rem;
+    /* transform: rotate(6deg); */
+    left: 8.9rem;
+}
